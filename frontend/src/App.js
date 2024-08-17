@@ -1,13 +1,11 @@
 import React from 'react';
-import Header from './components/Header';
-import SearchSection from './components/SearchSection';
+import { RouterProvider } from 'react-router-dom';
+import { routers } from './routers/routers';
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <SearchSection />
-    </div>
+    <RouterProvider router={routers}>
+    </RouterProvider>
   );
 };
 
