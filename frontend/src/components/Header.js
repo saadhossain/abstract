@@ -7,7 +7,7 @@ const Header = () => {
     const { isModalOpen, setIsModalOpen } = useContext(DataContext);
     return (
         <div className='w-full bg-black py-4'>
-            <div className='w-11/12 md:w-10/12 mx-auto flex items-center justify-between'>
+            <div className='w-11/12 md:w-10/12 max-w-[1440px] mx-auto flex items-center justify-between'>
                 {/* logo area */}
                 <Link to='/' className='flex gap-2 items-center text-gray-300'>
                     <img src={logo} alt='Branding/Logo' width={40} height={40} />

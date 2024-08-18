@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className='w-full bg-black text-white'>
             {/* Quick Links Section */}
-            <section className='w-10/12 mx-auto grid grid-cols-2 md:grid-cols-4 gap-5 py-10'>
+            <section className='w-11/12 md:w-10/12 max-w-[1440px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-5 py-10'>
                 {/* Abstract */}
                 <div className='flex flex-col gap-2'>
                     <img src={logo} alt='Branding/Logo' width={40} height={40} />

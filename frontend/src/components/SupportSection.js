@@ -36,7 +36,7 @@ const SupportSection = () => {
         return <Loading />;
     }
     return (
-        <div className='w-11/12 md:w-8/12 mx-auto my-12 md:my-24 grid md:grid-cols-2 gap-5 md:gap-10'>
+        <div className='w-11/12 md:w-8/12 max-w-[1440px] mx-auto my-12 md:my-24 grid md:grid-cols-2 gap-5 md:gap-10'>
             {
                 filteredCards.map((card) => <Card key={card._id} card={card} />)
             }
