@@ -1,27 +1,28 @@
 # Help Center API Assignment
 
-## Instructions
+## How to Use Guide
+### Please clone the entire repo to the local machine
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/iAmritMalviya/fullstack-assignment
-   cd fullstack-assignment
-   ```
+2. **Backend:**
+  - To Set and Run the Backend Server locally open the `backend` folder in a terminal
+   - If you use vs code open the entire repo and use the command `cd backend/` to enter the folder
+   - Run the Command `npm install` to install the packages and dependencies.
+   - Run the Command `npm start` to start the app.
+   - Server running on port 5000, use this <a href="http://localhost:5000/ping" target="_blank">http://localhost:5000/ping</a> to test.
 
-2. **Frontend:**
-   - Create a React app in the `frontend` folder.
-   - Follow the instructions in `frontend.md` to complete the frontend.
+1. **Frontend:**
+   - To Set and Run the frontend locally open the `frontend` folder in a terminal
+   - If you use vs code open the entire repo and use the command `cd frontend/` to enter the folder
+   - Run the Command `npm install` to install the packages and dependencies.
+   - Run the Command `npm start` to start the app.
+   - Please visit the URL <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> to experience the app.
+   - At the Header, you will see a Button, `Submit a Request`, you can use it to add a new Card.
 
-3. **Backend:**
-   - Create a Node.js app in the `backend` folder.
-   - Follow the `backend.md` instructions to complete the backend.
+3. **Questions and Answers**
+   - Frontend Questions are answered in the `frontend.md` file.
 
-4. **Push Your Work:**
-   - Push both the frontend and backend apps to the same repository.
-   - Make sure the repository is public.
-
-5. **Submit Your Work:**
-   - Paste the GitHub repository link in the Google form you received after pushing your code.
+4. **Live Preview**
+   - Please visit this url <a href="https://abstract-saad.vercel.app" target="_blank">Live Preview</a>
 
 ---
 
