@@ -1,8 +1,13 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import ErrorPage from '../pages/ErrorPage';
 
 const CardDetails = () => {
     const card = useLoaderData();
+
+    if (!card._id) {
+        return <ErrorPage />;
+    }
     return (
         <div className='w-11/12 md:w-10/12 mx-auto my-12 md:my-32'>
             <div className='bg-[#F4F6F8] border border-[#CCD7E4] rounded-lg'>

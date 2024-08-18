@@ -46,14 +46,17 @@ const dbConnect = () => {
         const result = await cardsCollection.insertOne(newCard);
         res.send(result);
     });
-    // //Get single cards by title
+    //Get single cards by title
     app.get('/cards/:title', async (req, res) => {
         const title = req.params.title;
         const query = {
             title: title
         };
-        const cards = await cardsCollection.find(query).toArray();
-        res.send(cards[0]);
+        const card = await cardsCollection.find(query).toArray();
+        if (card.length === 0) {
+            return res.status(404).send({ message: "Card not found." });
+        }
+        res.send(card[0]);
     });
 };
 

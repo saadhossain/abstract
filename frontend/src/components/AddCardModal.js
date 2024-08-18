@@ -3,7 +3,7 @@ import toast from 'react-hot-toast';
 import { DataContext } from '../context/DataContext';
 
 const AddCardModal = () => {
-    const { isModalOpen, setIsModalOpen, setNewCardAdded } = useContext(DataContext);
+    const { isModalOpen, setIsModalOpen, newCardAdded, setNewCardAdded } = useContext(DataContext);
 
     // Functionality for Adding New Card
     const handleAddCard = async (e) => {
@@ -28,7 +28,7 @@ const AddCardModal = () => {
                 toast.success('Card Added Successfully.');
                 form.reset();
                 setIsModalOpen(false);
-                setNewCardAdded(true);
+                setNewCardAdded(!newCardAdded);
             } else {
                 toast.error(data.message);
             }
